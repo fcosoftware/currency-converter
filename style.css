@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: #8A51FC;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,0.7020149124102766) 0%, rgba(242,159,5,0) 63%, rgba(0,88,255,0.6375891421021533) 97%);
+
+   background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(107,25,25,0.8336675734747023) 91%);
 }
 
 
@@ -16,6 +20,8 @@ body {
     height: 160px;
     display: block;
     margin: 9px auto;
+    filter: opacity(85%);
+   
 }
 
 main {

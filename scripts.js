@@ -34,7 +34,6 @@ function convertValues() {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
-
         }).format(inputCurrencyValue / euroToday.high)
     }
 
@@ -50,18 +49,17 @@ function convertValues() {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "BTC",
-            maximumSignificantDigits: 8
+            maximumSignificantDigits: 9
 
         }).format(inputCurrencyValue / bitcoinToday.high)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
-        currency: "BRL"
+        currency: "BRL"      
     }).format(inputCurrencyValue)
-
-    })  
-      
+    })
+          
 }
 
 function changeCurrency() {
